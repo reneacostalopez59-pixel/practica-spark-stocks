@@ -10,6 +10,11 @@ Implementación de un flujo completo de procesamiento distribuido con **PySpark 
 
 > **Nota sobre el dataset:** El archivo oficial `stocks.txt` descargado de `josepgarcia/datos` contiene 30 registros de inventario de productos con el esquema `id,name,category,quantity,price` (31 líneas incluyendo encabezado). El análisis se adaptó a este esquema real conservando todas las transformaciones, agregaciones, cálculos de dispersión/volatilidad y acciones requeridas.
 
+## Evidencia de ejecución
+Particiones del RDD: 2 particiones (rdd_raw.getNumPartitions()).
+
+Resultados completos y Preguntas de Reflexión: Disponibles directamente al abrir practica_spark_stocks.ipynb.
+
 ## Estructura del repositorio
 
 ```text
@@ -22,7 +27,3 @@ practica-spark-stocks/
 │   └── stats_por_categoria/      # Salida de saveAsTextFile()
 └── img/
     └── spark_ui.png              # Evidencia de ejecución en Spark UI (puerto 4040)
-## Evidencia de ejecución
-Particiones del RDD: 2 particiones (rdd_raw.getNumPartitions()).
-
-Resultados completos y Preguntas de Reflexión: Disponibles directamente al abrir practica_spark_stocks.ipynb.
